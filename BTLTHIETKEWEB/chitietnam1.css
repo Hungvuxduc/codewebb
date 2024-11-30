@@ -1,0 +1,174 @@
+
+body {
+  font-family: Arial, sans-serif; /* Thiết lập font chữ chung cho trang */
+  background-color: #f5f5f5; /* Màu nền cho toàn bộ trang */
+  margin: 0; /* Loại bỏ khoảng cách mặc định */
+  padding: 0; /* Loại bỏ khoảng cách đệm mặc định */
+}
+
+.container {
+  display: flex; /* Sử dụng flexbox để bố trí các phần tử bên trong */
+  padding: 20px; /* Thêm khoảng cách bên trong container */
+  background-color: #fff; /* Màu nền trắng cho container */
+  max-width: 1200px; /* Độ rộng tối đa của container */
+  margin: 20px auto; /* Căn giữa container và thêm khoảng cách trên dưới */
+  border: 1px solid #ddd; /* Viền xám nhạt */
+}
+
+.left-section {
+  flex: 1; /* Phần bên trái chiếm 1 phần của flexbox */
+  padding-right: 20px; /* Khoảng cách bên phải của phần trái */
+}
+
+.left-section img {
+  width: 100%; /* Ảnh trong phần trái chiếm toàn bộ chiều rộng */
+  border: 1px solid #ddd; /* Viền xám nhạt cho ảnh */
+}
+
+.thumbnail-container {
+  display: flex; /* Hiển thị các thumbnail theo hàng ngang */
+  margin-top: 10px; /* Khoảng cách trên của container thumbnail */
+}
+
+.thumbnail-container img {
+  width: 60px; /* Độ rộng cố định cho thumbnail */
+  height: 60px; /* Chiều cao cố định cho thumbnail */
+  margin-right: 10px; /* Khoảng cách giữa các thumbnail */
+  border: 1px solid #ddd; /* Viền xám nhạt */
+  cursor: pointer; /* Con trỏ chuột dạng tay khi di chuột qua */
+}
+
+.right-section {
+  flex: 2; /* Phần bên phải chiếm 2 phần của flexbox */
+}
+
+.product-title {
+  font-size: 18px; /* Kích thước font cho tiêu đề sản phẩm */
+  font-weight: bold; /* Chữ đậm */
+  margin-bottom: 10px; /* Khoảng cách dưới tiêu đề */
+}
+
+.rating {
+  display: flex; /* Hiển thị các phần tử đánh giá theo hàng ngang */
+  align-items: center; /* Căn giữa các phần tử theo chiều dọc */
+  margin-bottom: 10px; /* Khoảng cách dưới */
+}
+
+.rating i {
+  color: #f5a623; /* Màu vàng cho các ngôi sao đánh giá */
+}
+
+.rating span {
+  margin-left: 5px; /* Khoảng cách bên trái của số lượng đánh giá */
+  color: #999; /* Màu xám nhạt cho số lượng đánh giá */
+}
+
+.price {
+  font-size: 24px; /* Kích thước font cho giá sản phẩm */
+  color: #ff424e; /* Màu đỏ cho giá sản phẩm */
+  margin-bottom: 10px; /* Khoảng cách dưới */
+}
+
+.original-price {
+  text-decoration: line-through; /* Gạch ngang giá gốc */
+  color: #999; /* Màu xám nhạt cho giá gốc */
+  margin-left: 10px; /* Khoảng cách bên trái */
+}
+
+.flash-sale {
+  color: #ff424e; /* Màu đỏ nổi bật cho thông báo giảm giá */
+  font-weight: bold; /* Chữ đậm */
+  margin-bottom: 10px; /* Khoảng cách dưới */
+}
+
+.discount-buttons {
+  display: flex; /* Hiển thị các nút giảm giá theo hàng ngang */
+  margin-bottom: 10px; /* Khoảng cách dưới */
+}
+
+.discount-buttons button {
+  background-color: #ff424e; /* Màu nền đỏ cho nút giảm giá */
+  color: #fff; /* Màu chữ trắng */
+  border: none; /* Loại bỏ viền */
+  padding: 5px 10px; /* Kích thước nút */
+  margin-right: 10px; /* Khoảng cách giữa các nút */
+  cursor: pointer; /* Con trỏ chuột dạng tay */
+}
+
+.policy {
+  margin-bottom: 10px; /* Khoảng cách dưới của chính sách */
+}
+
+.policy span {
+  display: block; /* Hiển thị từng chính sách trên một dòng */
+  margin-bottom: 5px; /* Khoảng cách dưới từng mục chính sách */
+}
+
+.combo {
+  margin-bottom: 10px; /* Khoảng cách dưới phần combo */
+}
+
+.combo button {
+  background-color: #ff424e; /* Màu nền đỏ cho nút combo */
+  color: #fff; /* Màu chữ trắng */
+  border: none; /* Loại bỏ viền */
+  padding: 5px 10px; /* Kích thước nút */
+  cursor: pointer; /* Con trỏ chuột dạng tay */
+}
+
+.shipping {
+  margin-bottom: 10px; /* Khoảng cách dưới phần vận chuyển */
+}
+
+.shipping span {
+  display: block; /* Hiển thị từng mục vận chuyển trên một dòng */
+  margin-bottom: 5px; /* Khoảng cách dưới từng mục */
+}
+
+.size-selection {
+  margin-bottom: 10px; /* Khoảng cách dưới phần chọn kích thước */
+}
+
+.size-selection button {
+  background-color: #fff; /* Nền trắng cho nút kích thước */
+  border: 1px solid #ddd; /* Viền xám nhạt */
+  padding: 5px 10px; /* Kích thước nút */
+  margin-right: 5px; /* Khoảng cách giữa các nút */
+  cursor: pointer; /* Con trỏ chuột dạng tay */
+}
+
+.quantity {
+  display: flex; /* Hiển thị phần số lượng theo hàng ngang */
+  align-items: center; /* Căn giữa các phần tử */
+  margin-bottom: 10px; /* Khoảng cách dưới */
+}
+
+.quantity input {
+  width: 50px; /* Độ rộng của ô nhập số lượng */
+  text-align: center; /* Căn giữa chữ trong ô */
+  border: 1px solid #ddd; /* Viền xám nhạt */
+  margin: 0 10px; /* Khoảng cách giữa các phần tử trong phần số lượng */
+}
+
+.share {
+  display: flex; /* Hiển thị phần chia sẻ theo hàng ngang */
+  align-items: center; /* Căn giữa các biểu tượng chia sẻ */
+  margin-bottom: 10px; /* Khoảng cách dưới */
+}
+
+.share i {
+  color: #999; /* Màu xám cho các biểu tượng chia sẻ */
+  margin-right: 10px; /* Khoảng cách giữa các biểu tượng */
+  cursor: pointer; /* Con trỏ chuột dạng tay */
+}
+
+.like {
+  display: flex; /* Hiển thị phần thích theo hàng ngang */
+  align-items: center; /* Căn giữa các phần tử */
+  color: #ff424e; /* Màu đỏ cho biểu tượng thích */
+  cursor: pointer; /* Con trỏ chuột dạng tay */
+}
+
+.like i {
+  margin-right: 5px; /* Khoảng cách giữa biểu tượng thích và chữ */
+}

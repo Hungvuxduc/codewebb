@@ -1,0 +1,16 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden; /* Ngăn cuộn trang */
+}
+.bgVideo {
+    position: fixed; /* Đặt video là fixed để nó luôn lấp đầy màn hình */
+    top: 50%;
+    left: 50%;
+    min-width: 100%; /* Đảm bảo chiều rộng tối thiểu là 100% */
+    min-height: 100%; /* Đảm bảo chiều cao tối thiểu là 100% */
+    width: auto; /* Giữ tỷ lệ video */
+    height: auto; /* Giữ tỷ lệ video */
+    z-index: -1; /* Đưa video xuống dưới các phần tử khác */
+    transform: translate(-50%, -50%); /* Căn giữa video */
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi"> 
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Admin Duyệt Đơn Hàng</title>
+    <link rel="stylesheet" href="admin(duyetdon).css"> <!-- Liên kết đến tệp CSS để định dạng giao diện -->
+</head>
+<body>
+    <div class="container"> <!-- Thẻ chứa toàn bộ nội dung của trang -->
+        <h2>Duyệt Đơn Hàng</h2> <!-- Tiêu đề chính của trang -->
+        <table> <!-- Bắt đầu bảng hiển thị dữ liệu đơn hàng -->
+            <thead> <!-- Phần đầu của bảng, chứa các tiêu đề cột -->
+                <tr>
+                    <th>Mã Đơn Hàng</th> <!-- Tiêu đề cột: Mã đơn hàng -->
+                    <th>Khách Hàng</th> <!-- Tiêu đề cột: Tên khách hàng -->
+                    <th>Sản Phẩm</th> <!-- Tiêu đề cột: Tên sản phẩm -->
+                    <th>Địa Chỉ IP Truy Cập</th> <!-- Tiêu đề cột: Địa chỉ IP của khách hàng -->
+                    <th>Trạng Thái</th> <!-- Tiêu đề cột: Trạng thái duyệt đơn hàng -->
+                    <th>Hành Động</th> <!-- Tiêu đề cột: Các hành động như duyệt đơn -->
+                </tr>
+            </thead>
+            <tbody> <!-- Phần thân của bảng, chứa dữ liệu các đơn hàng -->
+                <!-- Dữ liệu đơn hàng giả lập -->
+                <tr>
+                    <td>123456</td> 
+                    <td>Nguyễn Văn An</td>
+                    <td>Giày Thể Thao</td>
+                    <td class="ip-address">192.168.1.1</td> 
+                    <td class="status">Chưa duyệt</td> 
+                    <td><button class="approve-btn" onclick="approveOrder(this)">Duyệt</button></td> <!-- Nút Duyệt đơn hàng với sự kiện onclick gọi hàm JavaScript -->
+                </tr>
+                <tr>
+                    <td>234567</td> <!-- Mã đơn hàng khác -->
+                    <td>Trần Thị Thư</td>
+                    <td>Giày Thời Trang JD4</td>
+                    <td class="ip-address">192.168.1.2</td>
+                    <td class="status">Chưa duyệt</td>
+                    <td><button class="approve-btn" onclick="approveOrder(this)">Duyệt</button></td> <!-- Nút Duyệt đơn hàng -->
+                </tr>
+                <tr>
+                    <td>345678</td>
+                    <td>Phạm Văn Cương</td>
+                    <td>Giày Sneaker</td>
+                    <td class="ip-address">192.168.1.3</td>
+                    <td class="status">Chưa duyệt</td>
+                    <td><button class="approve-btn" onclick="approveOrder(this)">Duyệt</button></td> <!-- Nút Duyệt đơn hàng -->
+                </tr>
+                <!-- Có thể thêm các đơn hàng khác nếu cần -->
+            </tbody>
+        </table>
+    </div>
+    <script src="admin(duyetdon).js"></script> <!-- Liên kết đến tệp JavaScript để xử lý các chức năng duyệt đơn -->
+</body>
+</html>

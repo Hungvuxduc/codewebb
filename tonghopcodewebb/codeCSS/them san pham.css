@@ -1,0 +1,90 @@
+body {
+    font-family: 'Arial', sans-serif; /* Đặt font chữ mặc định cho toàn bộ trang */
+    background-color: #f4f7fc; /* Đặt màu nền cho trang */
+    margin: 0; /* Xóa lề mặc định của trang */
+    padding: 0; /* Xóa padding mặc định của trang */
+}
+
+.container {
+    max-width: 600px; /* Giới hạn chiều rộng tối đa của container là 600px */
+    margin: 50px auto; /* Canh giữa container theo chiều ngang và thêm khoảng cách trên/dưới */
+    background-color: white; /* Đặt màu nền trắng cho container */
+    padding: 30px; /* Thêm khoảng cách bên trong container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tạo hiệu ứng đổ bóng nhẹ */
+    border-radius: 10px; /* Bo tròn các góc của container */
+}
+
+h2 {
+    text-align: center; /* Căn giữa tiêu đề */
+    color: #333; /* Đặt màu chữ xám đậm */
+    font-size: 24px; /* Đặt kích thước font chữ cho tiêu đề */
+    margin-bottom: 20px; /* Thêm khoảng cách dưới tiêu đề */
+}
+
+label {
+    display: block; /* Hiển thị nhãn dưới dạng block (một khối riêng) */
+    margin-bottom: 8px; /* Thêm khoảng cách dưới nhãn */
+    font-weight: bold; /* Làm đậm chữ của nhãn */
+    font-size: 16px; /* Đặt kích thước font chữ cho nhãn */
+    color: #555; /* Đặt màu chữ xám nhạt */
+}
+
+input[type="text"], input[type="number"], textarea {
+    width: 100%; /* Chiều rộng của ô nhập liệu chiếm toàn bộ container */
+    padding: 12px; /* Thêm khoảng cách bên trong ô nhập liệu */
+    margin-bottom: 20px; /* Thêm khoảng cách dưới ô nhập liệu */
+    border: 1px solid #ccc; /* Tạo đường viền màu xám nhạt */
+    border-radius: 5px; /* Bo tròn các góc của ô nhập liệu */
+    font-size: 16px; /* Đặt kích thước font chữ */
+    color: #333; /* Đặt màu chữ xám đậm */
+}
+
+input[type="text"]:focus, input[type="number"]:focus, textarea:focus {
+    border-color: #007bff; /* Thay đổi màu viền khi ô nhập liệu được focus */
+    outline: none; /* Loại bỏ đường viền mặc định khi focus */
+}
+
+textarea {
+    resize: vertical; /* Cho phép người dùng thay đổi kích thước theo chiều dọc */
+    min-height: 150px; /* Chiều cao tối thiểu của textarea */
+}
+
+.submit-btn {
+    width: 100%; /* Chiều rộng của nút chiếm toàn bộ container */
+    padding: 14px; /* Thêm khoảng cách bên trong nút */
+    background-color: #007bff; /* Đặt màu nền xanh dương cho nút */
+    color: white; /* Đặt màu chữ trắng */
+    font-size: 16px; /* Đặt kích thước font chữ */
+    font-weight: bold; /* Làm đậm chữ */
+    border: none; /* Loại bỏ đường viền của nút */
+    cursor: pointer; /* Hiển thị con trỏ chuột dạng pointer khi di chuột vào nút */
+    border-radius: 5px; /* Bo tròn các góc của nút */
+    transition: background-color 0.3s ease; /* Tạo hiệu ứng chuyển đổi màu nền mượt mà */
+}
+
+.submit-btn:hover {
+    background-color: #0056b3; /* Thay đổi màu nền khi di chuột vào nút */
+}
+
+.error-message {
+    color: red; /* Đặt màu chữ đỏ cho thông báo lỗi */
+    font-size: 14px; /* Đặt kích thước font chữ cho thông báo lỗi */
+    margin-bottom: 10px; /* Thêm khoảng cách dưới thông báo lỗi */
+}
+
+.toolbar {
+    margin-bottom: 10px; /* Thêm khoảng cách dưới thanh công cụ */
+}
+
+.toolbar button {
+    padding: 6px 12px; /* Thêm khoảng cách bên trong nút của thanh công cụ */
+    margin-right: 5px; /* Thêm khoảng cách bên phải nút */
+    font-size: 14px; /* Đặt kích thước font chữ cho nút */
+    background-color: #f0f0f0; /* Đặt màu nền xám nhạt */
+    border: 1px solid #ccc; /* Tạo đường viền màu xám nhạt */
+    cursor: pointer; /* Hiển thị con trỏ chuột dạng pointer khi di chuột vào nút */
+}
+
+.toolbar button:hover {
+    background-color: #e0e0e0; /* Thay đổi màu nền khi di chuột vào nút */
+}

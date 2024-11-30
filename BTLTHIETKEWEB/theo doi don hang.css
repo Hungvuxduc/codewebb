@@ -1,0 +1,80 @@
+* {
+  margin: 0; /* Xóa lề mặc định của tất cả các phần tử */
+  padding: 0; /* Xóa padding mặc định của tất cả các phần tử */
+  box-sizing: border-box; /* Đảm bảo padding và border không làm thay đổi kích thước tổng thể của phần tử */
+}
+
+body {
+  font-family: Arial, sans-serif; /* Đặt font chữ mặc định cho toàn bộ trang */
+  background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20230718/pngtree-d-rendering-of-online-delivery-service-track-your-orders-and-get-image_3910581.jpg"); /* Đặt hình nền cho trang */
+  background-size: cover; /* Đảm bảo hình nền phủ kín toàn bộ trang */
+  background-repeat: no-repeat; /* Không lặp lại hình nền */
+  display: flex; /* Sử dụng Flexbox để canh chỉnh nội dung bên trong body */
+  justify-content: center; /* Căn giữa nội dung theo trục ngang */
+  align-items: center; /* Căn giữa nội dung theo trục dọc */
+  flex-direction: column; /* Sắp xếp các phần tử theo chiều dọc */
+  height: 100vh; /* Chiều cao của body bằng 100% chiều cao viewport */
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.8); /* Đặt màu nền trắng với độ trong suốt là 80% */
+  padding: 20px; /* Thêm khoảng cách bên trong container */
+  border-radius: 8px; /* Bo tròn các góc của container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tạo hiệu ứng đổ bóng nhẹ */
+  width: 100%; /* Chiều rộng container là 100% của phần tử cha */
+  max-width: 400px; /* Giới hạn chiều rộng tối đa của container */
+  text-align: center; /* Căn giữa nội dung văn bản */
+}
+
+h1 {
+  font-size: 24px; /* Đặt kích thước font cho thẻ h1 */
+  color: #333; /* Đặt màu chữ là xám đậm */
+  margin-bottom: 20px; /* Thêm khoảng cách dưới thẻ h1 */
+}
+
+label {
+  display: block; /* Hiển thị nhãn dưới dạng block (một khối riêng) */
+  font-size: 14px; /* Đặt kích thước font chữ cho nhãn */
+  color: #555; /* Đặt màu chữ là xám nhạt */
+  margin-bottom: 8px; /* Thêm khoảng cách dưới nhãn */
+}
+
+input[type="text"] {
+  width: 100%; /* Chiều rộng của ô nhập liệu chiếm toàn bộ chiều rộng của container */
+  padding: 10px; /* Thêm khoảng cách bên trong ô nhập liệu */
+  font-size: 16px; /* Đặt kích thước font chữ cho ô nhập liệu */
+  border: 1px solid #ccc; /* Tạo đường viền màu xám nhạt */
+  border-radius: 4px; /* Bo tròn các góc của ô nhập liệu */
+  margin-bottom: 20px; /* Thêm khoảng cách dưới ô nhập liệu */
+}
+
+button {
+  width: 100%; /* Chiều rộng của nút chiếm toàn bộ chiều rộng của container */
+  padding: 10px; /* Thêm khoảng cách bên trong nút */
+  font-size: 16px; /* Đặt kích thước font chữ cho nút */
+  color: #fff; /* Đặt màu chữ trắng */
+  background-color: #28a745; /* Đặt màu nền xanh lá cây */
+  border: none; /* Loại bỏ đường viền của nút */
+  border-radius: 4px; /* Bo tròn các góc của nút */
+  cursor: pointer; /* Hiển thị con trỏ chuột dạng pointer khi di chuột vào nút */
+}
+
+button:hover {
+  background-color: #218838; /* Thay đổi màu nền khi di chuột vào nút */
+}
+
+.status {
+  margin-top: 20px; /* Thêm khoảng cách phía trên thẻ trạng thái */
+  font-size: 16px; /* Đặt kích thước font chữ cho trạng thái */
+  font-weight: bold; /* Đặt trạng thái thành chữ đậm */
+  color: #333; /* Đặt màu chữ xám đậm */
+}
+
+#map {
+  height: 300px; /* Chiều cao của bản đồ */
+  width: 100%; /* Chiều rộng bản đồ bằng 100% container cha */
+  display: none; /* Ẩn bản đồ theo mặc định */
+  margin-top: 20px; /* Thêm khoảng cách phía trên bản đồ */
+  border-radius: 8px; /* Bo tròn các góc của bản đồ */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Tạo hiệu ứng đổ bóng nhẹ */
+}

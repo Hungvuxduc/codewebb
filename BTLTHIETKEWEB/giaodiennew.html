@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="giao dien.css">
+  </head>
+  <body class="bg-gray-100">
+    <header class="bg-green-900 text-white">
+      <div
+        class="container mx-auto flex justify-between items-center py-4 px-6"
+      >
+        <div class="flex items-center">
+          <a href="/trangchu.html"
+            ><img src="/logo.png" alt="Logo" class="h-24 w-auto" />
+          </a>
+        </div>
+        <div class="flex items-center space-x-4">
+          <div class="relative search-container">
+            <select class="bg-white text-gray-700 rounded-l-md">
+              <option>Tất cả</option>
+            </select>
+            <input
+              class="bg-white text-gray-700 rounded-r-md"
+              placeholder="Tìm sản phẩm"
+              type="text"
+              id="search-input"
+              oninput="searchProducts()"
+            />
+            <button>
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+          <div class="flex items-center space-x-2">
+            <a class="text-white" href="/dangnhapnew.html"
+              >Đăng nhập</a
+            >
+            <div class="flex items-center space-x-2">
+              <a class="text-white" href="dangkymoi.html"
+              >Đăng Kí</a>
+            </div>
+            <i class="fas fa-user"></i>
+            <a class="fas fa-shopping-cart" href="/giohangnew.html"></a>
+            <span class="bg-orange-500 text-white rounded-full px-2">0</span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav class="bg-yellow-100">
+      <div
+        class="container mx-auto flex justify-between items-center py-2 px-6"
+      >
+        <a class="text-black-500 font-bold" href="giaodiennew.html">Trang chủ</a>
+        <a class="text-gray-700" href="/giayebe.html">Giày Trẻ Em</a>
+        <a class="text-gray-700" href="/giaynamnew.html">Giày Nam</a>
+        <a class="text-gray-700" href="/giayphunu.html">Giày Nữ</a>
+        <a class="text-gray-700" href="/Lienhe.html">Liên hệ</a>
+        <div class="flex items-center space-x-2">
+          <i class="fas fa-phone-alt text-green-900"></i>
+          <span class="text-green-900">Hotline: 0357961332</span>
+        </div>
+      </div>
+    </nav>
+
+    <header class="header-container">
+      <img
+        src="resized_image_1200x400.png"
+        alt="Banner quảng cáo"
+        class="header-banner"
+      />
+    </header>
+
+    <main class="main-content" id="productDisplay">
+      <div class="product-item">
+        <img
+          src="https://myshoes.vn/image/cache/catalog/2023/adidas/adi1/giay-adidas-grand-court-base-2-nam-trang-xanh-la-01-800x800.jpg"
+          alt="Ảnh 1"
+          class="product-img"
+        />
+        <p class="product-name">Giày Adidas Grand Court Base</p>
+      </div>
+      <div class="product-item">
+        <img
+          src="https://myshoes.vn/image/cache/catalog/2024/adidas/ad4/giay-adidas-vl-court-3-0-den-nau-01-800x800.jpg"
+          alt="Ảnh 2"
+          class="product-img"
+        />
+        <p class="product-name">Giày Adidas VL Court 3.0</p>
+      </div>
+      <div class="product-item">
+        <img
+          src="https://myshoes.vn/image/cache/catalog/2024/adidas/ad3/giay-adidas-supernova-stride-nam-xam-xanh-01-800x800.jpg"
+          alt="Ảnh 3"
+          class="product-img"
+        />
+        <p class="product-name">Giày Adidas Supernova Stride</p>
+      </div>
+    </main>
+
+    <div class="bottom-text">
+      <h2 class="text-xl font-bold highlighted-text" style="color: white">
+        CỬA HÀNG GIÀY THỜI TRANG DNU
+      </h2>
+      <p class="text-md mt-2" style="color: white">MUA 2 SẢN PHẨM TẶNG 20%</p>
+      <p class="text-md" style="color: white">Từ 10 - 16/12</p>
+    </div>
+    <script src="giao dien.js"></script>
+  </body>
+</html>

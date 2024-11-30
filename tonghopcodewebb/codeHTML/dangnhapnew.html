@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="đăng nhập.css">
+</head>
+<body>
+    <video autoplay loop muted class="bgVideo">
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="flex items-center justify-center h-full">
+        <div class="bg-white bg-opacity-90 p-8 rounded-lg shadow-lg w-96">
+            <div class="text-center mb-6">
+                <h1 class="text-2xl font-bold text-gray-600">DNU SHOES</h1>
+                <p class="text-gray-600 text-sm">UY TÍN - CHẤT LƯỢNG</p>
+                <a href="/trangchu.html"><img src="/logo.png" alt="Company Logo" width="100" height="100" class="mx-auto my-4" /></a>
+                <p class="text-lg font-semibold text-gray-600">ĐĂNG NHẬP</p>
+            </div>
+            <form>
+                <div class="mb-4">
+                    <label class="block text-gray-600 text-sm">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" placeholder="Tài Khoản Email" class="w-full px-4 py-2 mt-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" />
+                    </label>
+                </div>
+                <div class="mb-4 relative">
+                    <label class="block text-gray-600 text-sm">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password" class="w-full px-4 py-2 mt-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" />
+                        <i class="fas fa-eye absolute right-3 top-3 text-gray-500"></i>
+                    </label>
+                </div>
+                <a href="/giaodiennew.html" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 text-center flex items-center justify-center">
+                    <i class="fas fa-sign-in-alt mr-2"></i> Login
+                </a>
+            </form>
+            <div class="flex justify-between mt-4 text-sm text-gray-600">
+                <a href="/dangkymoi.html" class="hover:underline">Register</a>
+                <a href="#" class="hover:underline">Forgot password</a>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#" class="text-gray-600 hover:underline">
+                    <i class="fas fa-globe"></i> English
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

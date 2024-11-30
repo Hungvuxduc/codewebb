@@ -1,0 +1,28 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    /* Đặt font chữ cho toàn bộ trang:
+       -apple-system: Font mặc định trên hệ điều hành macOS và iOS.
+       BlinkMacSystemFont: Font mặc định của trình duyệt Chrome trên macOS.
+       "Helvetica Neue": Font Helvetica dành cho các hệ điều hành hỗ trợ font này.
+       Arial, sans-serif: Arial và sans-serif là các font thay thế nếu các font trên không có.
+    */
+}
+
+@media not all and (min-resolution:.001dpcm) {
+    /* Kiểm tra nếu không phải tất cả các thiết bị đều có độ phân giải tối thiểu là 0.001 dots per centimeter.
+       Đây là một mẹo để nhắm đến các trình duyệt sử dụng WebKit, đặc biệt là Safari.
+    */
+    
+    @supports (-webkit-appearance:none) {
+        /* Kiểm tra xem trình duyệt có hỗ trợ thuộc tính -webkit-appearance không.
+           Điều này giúp xác định các trình duyệt dựa trên WebKit, như Safari.
+        */
+        
+        body {
+            font-family: "Helvetica", sans-serif;
+            /* Đặt font chữ cho body thành "Helvetica" và sans-serif trên các trình duyệt WebKit
+               như Safari, nếu điều kiện trên được thỏa mãn.
+            */
+        }
+    }
+}

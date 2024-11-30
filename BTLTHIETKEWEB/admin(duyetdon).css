@@ -1,0 +1,81 @@
+body { 
+    font-family: Arial, sans-serif; /* Đặt font chữ cho toàn bộ trang thành Arial hoặc sans-serif nếu Arial không có */
+    background-image: url('https://sackim.com/wp-content/uploads/2020/01/1.jpg'); /* Đặt ảnh nền cho trang (để trống nghĩa là chưa có ảnh) */
+    background-color: #f9f9f9; /* Đặt màu nền cho trang (màu xám nhạt) */
+    color: #333; /* Đặt màu chữ mặc định cho toàn bộ văn bản trên trang (màu xám đậm) */
+    display: flex; /* Dùng Flexbox để căn chỉnh nội dung bên trong */
+    justify-content: center; /* Căn giữa nội dung theo chiều ngang */
+    align-items: center; /* Căn giữa nội dung theo chiều dọc */
+    min-height: 100vh; /* Chiều cao tối thiểu bằng chiều cao của toàn màn hình */
+    margin: 0; /* Loại bỏ khoảng cách mặc định xung quanh trang */
+}
+
+.container { 
+    max-width: 800px; /* Đặt chiều rộng tối đa của container là 800px */
+    width: 100%; /* Đặt chiều rộng của container bằng 100% */
+    background-color: #fff; /* Đặt màu nền của container là màu trắng */
+    padding: 20px; /* Thêm khoảng cách bên trong container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tạo hiệu ứng đổ bóng xung quanh container */
+    border-radius: 8px; /* Bo tròn các góc của container */
+    margin: 20px; /* Thêm khoảng cách bên ngoài container */
+}
+
+h2 {
+    color: #333; /* Đặt màu chữ cho tiêu đề h2 là màu xám đậm */
+    text-align: center; /* Căn giữa tiêu đề */
+    font-size: 24px; /* Đặt kích thước font cho tiêu đề là 24px */
+    font-weight: bold; /* Đặt độ dày font là bold (đậm) */
+}
+
+table { 
+    width: 100%; /* Đặt chiều rộng của bảng là 100% của container chứa nó */
+    border-collapse: collapse; /* Loại bỏ khoảng cách giữa các đường viền của ô trong bảng */
+    margin-top: 20px; /* Thêm khoảng cách trên đầu bảng */
+}
+
+th, td { 
+    padding: 15px; /* Thêm khoảng cách bên trong ô (th và td) */
+    border-bottom: 1px solid #e0e0e0; /* Đặt đường viền dưới mỗi ô là màu xám nhạt */
+    text-align: center; /* Căn giữa nội dung của ô */
+}
+
+th { 
+    background-color: #333; /* Đặt màu nền của tiêu đề bảng là màu xám đậm */
+    color: white; /* Đặt màu chữ của tiêu đề bảng là màu trắng */
+    font-weight: bold; /* Đặt độ dày font là bold cho tiêu đề bảng */
+    font-size: 16px; /* Đặt kích thước font cho tiêu đề bảng là 16px */
+}
+
+.status {
+    font-weight: bold; /* Đặt độ dày font là bold cho phần tử mang class 'status' */
+}
+
+.approve-btn { 
+    background-color: #333; /* Đặt màu nền cho nút 'Duyệt' là màu xám đậm */
+    color: white; /* Đặt màu chữ của nút là màu trắng */
+    padding: 8px 15px; /* Đặt khoảng cách bên trong nút theo chiều dọc và chiều ngang */
+    border: none; /* Loại bỏ đường viền của nút */
+    border-radius: 4px; /* Bo tròn các góc của nút */
+    cursor: pointer; /* Thay đổi con trỏ chuột thành dạng chỉ tay khi rê vào nút */
+    font-size: 14px; /* Đặt kích thước font cho nút */
+    transition: background-color 0.3s; /* Thêm hiệu ứng chuyển màu nền khi hover (trong 0.3 giây) */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Thêm hiệu ứng đổ bóng nhẹ cho nút */
+}
+
+.approve-btn:hover { 
+    background-color: #555; /* Thay đổi màu nền của nút khi hover (màu xám nhạt hơn) */
+}
+
+.approve-btn:disabled {
+    background-color: #ccc; /* Đặt màu nền cho nút khi bị vô hiệu hóa (màu xám nhạt) */
+    cursor: not-allowed; /* Thay đổi con trỏ thành dạng không cho phép khi nút bị vô hiệu hóa */
+    box-shadow: none; /* Loại bỏ đổ bóng khi nút bị vô hiệu hóa */
+}
+
+tr:nth-child(even) {
+    background-color: #f4f4f4; /* Đặt màu nền cho các hàng chẵn trong bảng là màu xám nhạt */
+}
+
+.status.approved {
+    color: #28a745; /* Đặt màu chữ là màu xanh lá cây khi trạng thái được phê duyệt */
+}

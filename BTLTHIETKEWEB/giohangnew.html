@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giỏ Hàng</title>
+    <link rel="stylesheet" href="gio hang.css">
+  </head>
+  <body>
+    <div class="cart-container">
+      <h1>Giỏ Hàng Của Bạn</h1>
+      <div class="cart-items" id="cartItems">
+        <!-- Sản phẩm sẽ được thêm ở đây -->
+      </div>
+      <div class="total" id="total">Tổng cộng: 0 VNĐ</div>
+
+      <h2>Thông Tin Khách Hàng</h2>
+      <div class="customer-info">
+        <input type="text" id="name" placeholder="Họ và Tên" />
+        <input type="email" id="email" placeholder="Email" />
+        <input type="tel" id="phone" placeholder="Số Điện Thoại" />
+      </div>
+
+      <div class="actions">
+        <button class="back-btn" onclick="goHome()">Quay về Trang Chủ</button>
+        <button class="confirm-btn" onclick="confirmOrder()">
+          Xác Nhận Đặt Hàng
+        </button>
+        <button class="track-btn" onclick="trackOrder()">
+          Theo Dõi Đơn Hàng
+        </button>
+      </div>
+
+      <div class="order-confirmation" id="orderConfirmation">
+        Đặt hàng thành công! <br />
+        Tên: <span id="confirmName"></span> <br />
+        Email: <span id="confirmEmail"></span> <br />
+        Số điện thoại: <span id="confirmPhone"></span>
+      </div>
+    </div>
+    <script src="gio hang.js"></script>
+  </body>
+</html>

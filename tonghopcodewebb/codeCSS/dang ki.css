@@ -1,0 +1,33 @@
+body,
+      html {
+        height: 100%; /* Đảm bảo chiều cao của body và html là 100% */
+        margin: 0; /* Xóa lề mặc định */
+        overflow: hidden; /* Ngăn cuộn trang */
+      }
+
+      .bgVideo {
+        position: fixed; /* Đặt video là fixed để nó luôn lấp đầy màn hình */
+        top: 50%; /* Căn giữa theo chiều dọc */
+        left: 50%; /* Căn giữa theo chiều ngang */
+        min-width: 100%; /* Đảm bảo chiều rộng tối thiểu là 100% */
+        min-height: 100%; /* Đảm bảo chiều cao tối thiểu là 100% */
+        width: auto; /* Giữ tỷ lệ video */
+        height: auto; /* Giữ tỷ lệ video */
+        z-index: -1; /* Đưa video xuống dưới các phần tử khác */
+        transform: translate(-50%, -50%); /* Căn giữa video */
+      }
+
+      /* Thêm CSS cho thông báo ở góc phải trên cùng */
+      #successMessage {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        display: none; /* Ẩn mặc định */
+        z-index: 9999; /* Đảm bảo thông báo nằm trên cùng */
+      }
+      

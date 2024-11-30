@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif; /* Đặt font chữ cho toàn bộ trang */
+    background-color: #eef2f3; /* Đặt màu nền xám nhạt */
+    margin: 0; /* Xóa lề mặc định của trang */
+    padding: 0; /* Xóa padding mặc định của trang */
+    display: flex; /* Sử dụng flexbox để căn chỉnh các phần tử bên trong body */
+    justify-content: center; /* Căn giữa nội dung theo chiều ngang */
+    align-items: center; /* Căn giữa nội dung theo chiều dọc */
+    height: 100vh; /* Chiều cao của body chiếm toàn bộ màn hình */
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiorhjwazWRkRA28wXdXQSdu9O5MUtosp4XA&s'); /* Đặt hình nền */
+    background-size: cover; /* Hình nền phủ kín toàn bộ body */
+    background-position: center; /* Căn giữa hình nền */
+}
+
+.container {
+    background-color: white; /* Màu nền trắng cho container */
+    padding: 20px; /* Thêm khoảng cách bên trong container */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Tạo hiệu ứng đổ bóng nhẹ */
+    border-radius: 8px; /* Bo tròn các góc của container */
+    max-width: 500px; /* Chiều rộng tối đa của container */
+    text-align: center; /* Căn giữa nội dung bên trong container */
+}
+
+.header-warning {
+    background-color: #fff4e5; /* Màu nền cam nhạt cho phần cảnh báo */
+    color: #e74c3c; /* Màu chữ đỏ */
+    padding: 10px; /* Thêm khoảng cách bên trong */
+    border-radius: 4px; /* Bo tròn các góc */
+    font-size: 14px; /* Kích thước font chữ nhỏ */
+    margin-bottom: 20px; /* Thêm khoảng cách phía dưới */
+}
+
+h3 {
+    font-size: 18px; /* Đặt kích thước font chữ cho tiêu đề */
+    margin-bottom: 20px; /* Thêm khoảng cách dưới tiêu đề */
+    color: #333; /* Màu chữ xám đậm */
+}
+
+.order-info {
+    text-align: left; /* Căn lề trái cho phần thông tin đơn hàng */
+    margin-bottom: 20px; /* Thêm khoảng cách dưới */
+}
+
+.order-info p {
+    margin: 8px 0; /* Khoảng cách trên/dưới các đoạn văn trong phần thông tin đơn hàng */
+    font-size: 16px; /* Kích thước font chữ */
+}
+
+.order-info strong {
+    color: #2c3e50; /* Màu chữ xanh đậm cho các văn bản in đậm */
+}
+
+.copy-btn {
+    background-color: #3498db; /* Màu nền xanh dương cho nút sao chép */
+    color: white; /* Màu chữ trắng */
+    border: none; /* Loại bỏ viền */
+    padding: 5px 10px; /* Thêm khoảng cách bên trong nút */
+    cursor: pointer; /* Con trỏ chuột dạng pointer khi di chuột vào */
+    border-radius: 5px; /* Bo tròn các góc của nút */
+    font-size: 14px; /* Kích thước font chữ */
+    margin-left: 10px; /* Thêm khoảng cách bên trái */
+}
+
+.copy-btn:hover {
+    background-color: #2980b9; /* Thay đổi màu nền khi di chuột vào nút */
+}
+
+.qr-section {
+    margin-top: 30px; /* Thêm khoảng cách phía trên phần QR code */
+}
+
+.qr-section img {
+    width: 200px; /* Chiều rộng của ảnh QR code */
+    height: 200px; /* Chiều cao của ảnh QR code */
+    border: 1px solid #ddd; /* Viền xám nhạt cho ảnh QR code */
+    padding: 5px; /* Thêm khoảng cách bên trong viền */
+    border-radius: 10px; /* Bo tròn các góc của ảnh */
+}
+
+.qr-section p {
+    margin: 10px 0 0 0; /* Khoảng cách trên cho đoạn văn dưới QR code */
+    font-size: 16px; /* Kích thước font chữ */
+}
+
+.footer {
+    margin-top: 30px; /* Thêm khoảng cách phía trên phần footer */
+    font-size: 13px; /* Kích thước font chữ nhỏ */
+    color: #7f8c8d; /* Màu chữ xám nhạt */
+}
+
+.footer a {
+    color: #3498db; /* Màu chữ xanh dương cho liên kết */
+    text-decoration: none; /* Loại bỏ gạch chân mặc định của liên kết */
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Thêm gạch chân khi di chuột vào liên kết */
+}
+
+.cancel-btn {
+    display: inline-block; /* Hiển thị nút như một khối nội tuyến */
+    margin-top: 20px; /* Thêm khoảng cách phía trên nút */
+    background-color: #e74c3c; /* Màu nền đỏ cho nút hủy */
+    color: white; /* Màu chữ trắng */
+    padding: 10px 20px; /* Thêm khoảng cách bên trong nút */
+    border: none; /* Loại bỏ viền */
+    border-radius: 5px; /* Bo tròn các góc của nút */
+    cursor: pointer; /* Con trỏ chuột dạng pointer khi di chuột vào */
+    font-size: 14px; /* Kích thước font chữ */
+}
+
+.cancel-btn:hover {
+    background-color: #c0392b; /* Thay đổi màu nền khi di chuột vào nút */
+}

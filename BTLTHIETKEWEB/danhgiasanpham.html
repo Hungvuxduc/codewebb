@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Xếp Hạng và Đánh Giá Sản Phẩm - DNU SHOES</title>
+    <link rel="stylesheet" href="danhgiasanpham.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Xếp Hạng Sản Phẩm</h1>
+      <div class="product-info">
+        <p>Tên sản phẩm: Giày Thể Thao DNU</p>
+        <p>Mô tả: Giày thể thao với thiết kế hiện đại và chất lượng cao.</p>
+      </div>
+      <div class="rating">
+        <span class="stars" data-value="1">&#9733;</span>
+        <span class="stars" data-value="2">&#9733;</span>
+        <span class="stars" data-value="3">&#9733;</span>
+        <span class="stars" data-value="4">&#9733;</span>
+        <span class="stars" data-value="5">&#9733;</span>
+      </div>
+      <label for="comment">Để lại đánh giá của bạn:</label>
+      <textarea
+        id="comment"
+        placeholder="Nhập đánh giá của bạn tại đây..."
+      ></textarea>
+      <button id="submitReview">Gửi Đánh Giá</button>
+      <div id="feedback" class="feedback"></div>
+    </div>
+    <script src="danhgiasanpham.js"></script>
+  </body>
+</html>
